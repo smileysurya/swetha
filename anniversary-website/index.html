@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Saurav &amp; Swetha — Our Forever Story</title>
+<meta name="description" content="A love story, told one memory at a time.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-heart">
+    <svg viewBox="0 0 32 29" width="60" height="60">
+      <path d="M16 29 C16 29 0 18.5 0 8.8 C0 3.4 4.2 0 8.6 0 C11.7 0 14.4 1.8 16 4.6 C17.6 1.8 20.3 0 23.4 0 C27.8 0 32 3.4 32 8.8 C32 18.5 16 29 16 29 Z" fill="url(#loaderGrad)"/>
+      <defs>
+        <linearGradient id="loaderGrad" x1="0" y1="0" x2="32" y2="29">
+          <stop offset="0%" stop-color="#D4AF37"/>
+          <stop offset="100%" stop-color="#F6B6C9"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <p class="loader-text">Unfolding our story<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
+</div>
+
+<!-- ============ AMBIENT / CURSOR LAYERS ============ -->
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="scroll-progress" aria-hidden="true"><div id="scroll-progress-bar"></div></div>
+<div id="floating-hearts-layer" aria-hidden="true"></div>
+<div id="particles-layer" aria-hidden="true"></div>
+
+<!-- ============ NAV DOTS ============ -->
+<nav class="side-nav" aria-label="Section navigation">
+  <button data-target="#hero" class="side-dot active" aria-label="Go to Hero"></button>
+  <button data-target="#timeline" class="side-dot" aria-label="Go to Love Story"></button>
+  <button data-target="#gallery" class="side-dot" aria-label="Go to Gallery"></button>
+  <button data-target="#memories" class="side-dot" aria-label="Go to Memories"></button>
+  <button data-target="#countdown" class="side-dot" aria-label="Go to Countdown"></button>
+  <button data-target="#letter" class="side-dot" aria-label="Go to Love Letter"></button>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg">
+      <img src="images/heart.jpg" alt="" class="hero-img" id="heroImg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Est. <span id="heroYear">2024</span></p>
+      <h1 class="hero-names" id="coupleNamesHero" data-reveal>Saurav <span class="hero-heart">&#10084;</span> Swetha</h1>
+      <p class="hero-date" id="heroDateDisplay" data-reveal>August 13, 2026</p>
+      <a href="#timeline" class="btn btn-gold" id="heroCta" data-reveal>
+        <span>Our Forever Story</span>
+        <i class="fa-solid fa-arrow-down-long" aria-hidden="true"></i>
+      </a>
+    </div>
+    <button class="scroll-hint" id="scrollHint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </section>
+
+  <!-- ============ LOVE STORY TIMELINE ============ -->
+ <section id="timeline" class="section">
+  <div class="section-header">
+    <span class="section-tag">Our Journey</span>
+    <h2>5 Beautiful Years Together</h2>
+    <p>Every moment with you became a beautiful memory worth keeping forever.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-spine"></div>
+
+    <!-- Chapter 1 -->
+    <article class="timeline-item" data-side="left">
+      <div class="timeline-marker"><i class="fa-solid fa-heart"></i></div>
+      <div class="timeline-card">
+        <span class="timeline-tag">Chapter One</span>
+      
+        <h3>Our First Meeting</h3>
+        <p class="timeline-date">13 August 2021</p>
+        <p>The day our beautiful story began. A simple meeting became the beginning of our forever.</p>
+      </div>
+    </article>
+
+    <!-- Chapter 2 -->
+    <article class="timeline-item" data-side="right">
+      <div class="timeline-marker"><i class="fa-solid fa-face-smile"></i></div>
+      <div class="timeline-card">
+        <span class="timeline-tag">Chapter Two</span>
+      
+        <h3>Our First Date</h3>
+        <p class="timeline-date">Our Beautiful Memory</p>
+        <p>From nervous smiles to endless laughter, every moment felt magical.</p>
+      </div>
+    </article>
+
+    <!-- Chapter 3 -->
+    <article class="timeline-item" data-side="left">
+      <div class="timeline-marker"><i class="fa-solid fa-plane"></i></div>
+      <div class="timeline-card">
+        <span class="timeline-tag">Chapter Three</span>
+       
+        <h3>Our Adventures</h3>
+        <p class="timeline-date">Beautiful Moments Together</p>
+        <p>Every journey became unforgettable because we travelled together.</p>
+      </div>
+    </article>
+
+    <!-- Chapter 4 -->
+    <article class="timeline-item" data-side="right">
+      <div class="timeline-marker"><i class="fa-solid fa-camera"></i></div>
+      <div class="timeline-card">
+        <span class="timeline-tag">Chapter Four</span>
+       
+        <h3>Favorite Memory</h3>
+        <p class="timeline-date">Our Happy Place</p>
+        <p>Some memories don't need a reason. Being with you is enough.</p>
+      </div>
+    </article>
+
+    <!-- Chapter 5 -->
+    <article class="timeline-item" data-side="left">
+      <div class="timeline-marker"><i class="fa-solid fa-gift"></i></div>
+      <div class="timeline-card">
+        <span class="timeline-tag">Chapter Five</span>
+
+        <h3>Happy 5th Love Anniversary</h3>
+        <p class="timeline-date">13 August 2026</p>
+        <p>Five years filled with love, support, affection and countless beautiful memories.</p>
+      </div>
+    </article>
+
+    <!-- Final Letter -->
+    <article class="timeline-item" data-side="right">
+      <div class="timeline-marker"><i class="fa-solid fa-envelope-open-heart"></i></div>
+      <div class="timeline-card love-card">
+        <span class="timeline-tag">Forever & Always</span>
+        <h3>To My Teddy ❤️</h3>
+
+        <div class="love-note-box">
+          <p><strong>Happy 5th Love Anniversary, my love.</strong></p>
+
+          <p>Thank you so much da. Enakaga ivlo love, support, affection ellame kudutha.</p>
+
+          <p>Un kooda irundha indha love journey romba azhaga iruku.</p>
+
+          <p>Life long idhe care and love irukum.</p>
+
+          <p>Indha life la enaku kedaicha greatest treasure nee da Teddy.</p>
+
+          <p>Life la evlo problems vandhalum na epovume un side irupan.</p>
+
+          <p>Enakaga indha life ah kuduthadhuku thank you so much.</p>
+
+          <p class="love-sign">
+            Muah... ❤️<br>
+            Love You Always Teddy
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" aria-label="Photo Gallery">
+    <div class="section-heading" data-reveal>
+      <span class="eyebrow">In Pictures</span>
+      <h2 class="font-display">Moments We Kept</h2>
+      <p class="sub">A handful of frames from a thousand memories.</p>
+    </div>
+
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.33 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.26 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.27 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.28 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.30 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us, Today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.31 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us, Today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.32 PM (1).jpeg" alt="Us today" loading="lazy"><figcaption>Us, Today</figcaption></figure>
+        <figure class="carousel-slide"><img src="images/WhatsApp Image 2026-08-13 at 1.46.33 PM.jpeg" alt="Us today" loading="lazy"><figcaption>Us, Today</figcaption></figure>
+
+
+      </div>
+
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="carousel-btn next" id="nextBtn" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+    <img src="" alt="" id="lightboxImg">
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+ 
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" aria-label="Anniversary Countdown">
+    <div class="countdown-bg" aria-hidden="true"></div>
+    <div class="section-heading light" data-reveal>
+      <span class="eyebrow">Counting Down</span>
+      <h2 class="font-display">Until Our Next Anniversary</h2>
+      <p class="sub">Every second brings us closer to celebrating us, again.</p>
+    </div>
+
+    <div class="countdown-grid" data-role="countdown-numbers">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cdDays">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cdHours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cdMinutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cdSeconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOVE LETTER ============ -->
+  <section id="letter" aria-label="Love Letter">
+    <div class="section-heading" data-reveal>
+      <span class="eyebrow">From My Heart</span>
+      <h2 class="font-display">A Letter For You</h2>
+    </div>
+
+    <div class="letter-wrap" data-reveal>
+      <div class="letter-paper">
+        <div class="letter-corner tl" aria-hidden="true">&#10084;</div>
+        <div class="letter-corner tr" aria-hidden="true">&#10084;</div>
+        <div class="letter-corner bl" aria-hidden="true">&#10084;</div>
+        <div class="letter-corner br" aria-hidden="true">&#10084;</div>
+        <p class="letter-greeting">My Dear Saurav,</p>
+        <p class="letter-body" id="letterBody"></p>
+        <p class="letter-sign">Forever yours,<br><span class="signature">Swetha</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CELEBRATE ============ -->
+  <section id="celebrate" aria-label="Celebrate Together">
+    <div class="section-heading" data-reveal>
+      <span class="eyebrow">One More Thing</span>
+      <h2 class="font-display">Shall We Celebrate?</h2>
+      <p class="sub">Press the button. Let the sky know how happy we are.</p>
+    </div>
+    <button class="btn btn-celebrate" id="celebrateBtn" data-reveal>
+      <span>Celebrate Together</span>
+      <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+    </button>
+  </section>
+
+  <!-- ============ QUOTES ============ -->
+  <section id="quotes" aria-label="Romantic Quotes">
+    <div class="quote-carousel" id="quoteCarousel">
+      <p class="quote-text" id="quoteText">"Being deeply loved by someone gives you strength, while loving someone deeply gives you courage."</p>
+      <span class="quote-author" id="quoteAuthor">— Lao Tzu</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="siteFooter">
+  <div class="footer-infinity" aria-hidden="true">&#8734;</div>
+  <p class="footer-tagline">Forever &amp; Always</p>
+  <p class="footer-names" id="footerNames">Surya &amp; Priya</p>
+  <p class="footer-note">Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> since <span id="footerDate">08.15.2024</span></p>
+</footer>
+
+<!-- ============ MUSIC PLAYER ============ -->
+<div class="music-player" id="musicPlayer">
+  <audio id="bgAudio" loop preload="none">
+    <source src="audio/ytmp3free.cc_naan-nee-naam-vazhave-uyire-full-video-song-madras-2014-hd-video-song-youtubemp3free.org.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Play our song" aria-pressed="false">
+    <span class="vinyl">
+      <i class="fa-solid fa-music"></i>
+    </span>
+  </button>
+  <div class="music-panel" id="musicPanel">
+    <p class="music-title">Our Song</p>
+    <div class="volume-row">
+      <i class="fa-solid fa-volume-low" aria-hidden="true"></i>
+      <input type="range" id="volumeSlider" min="0" max="100" value="60" aria-label="Volume">
+    </div>
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ============ CONFETTI / FIREWORKS CANVAS ============ -->
+<canvas id="celebrationCanvas" aria-hidden="true"></canvas>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
